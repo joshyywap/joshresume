@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Joshua's Resume</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1><?php echo "Joshua's Resume"; ?></h1>
+<p><?php echo "Aspiring Web Developer | Student"; ?></p>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#experience">Experience</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#certifications">Certifications</a>
+<a href="#achievements">Achievements</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+<p>Hello! I'm Joshua, a student passionate about web development and design. 
+I enjoy creating simple yet engaging websites with clean code and creative design.</p>
+</div>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<div class="card">
+<p><strong>BS Computer Science</strong> - University of Example (2022 - Present)</p>
+<p>Relevant Coursework: Web Development, Database Systems, Software Engineering</p>
+</div>
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+<div class="card">
+<p><strong>Intern - Web Development</strong> at Tech Solutions (2024)</p>
+<ul>
+<li>Assisted in building responsive websites</li>
+<li>Worked with PHP and MySQL</li>
+<li>Collaborated with senior developers</li>
+</ul>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="card">
+<ul>
+<li>HTML, CSS, PHP</li>
+<li>JavaScript (basic)</li>
+<li>Responsive Design</li>
+<li>Database Management (MySQL)</li>
+</ul>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="card">
+<p><strong>Portfolio Website</strong> - A personal site showcasing my projects.</p>
+<p><strong>Student Management System</strong> - A PHP/MySQL app for managing student records.</p>
+</div>
+</section>
+
+<section id="certifications">
+<h2>Certifications</h2>
+<div class="card">
+<p>Certified Web Developer - Online Course (2023)</p>
+<p>Responsive Web Design - FreeCodeCamp (2022)</p>
+</div>
+</section>
+
+<section id="achievements">
+<h2>Achievements</h2>
+<div class="card">
+<p>Dean’s List - 2023</p>
+<p>Hackathon Finalist - 2024</p>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="card">
+<p>Email: josh60497@gmail.com</p>
+<p>Phone: +63 966 8130 666</p>
+<p>Pesbok: Joshua Torres</p>
+<p>GitHub: https://joshyywap.github.io/joshh.github.io/</p>
+</div>
+</section>
+
+<footer>
+<p>&copy; <?php echo date("Y"); ?> Joshua's Resume Website</p>
+</footer>
+
+<script>
+
+const sections = document.querySelectorAll("section");
+window.addEventListener("scroll", () => {
+sections.forEach(sec => {
+const rect = sec.getBoundingClientRect();
+if (rect.top < window.innerHeight - 100) {
+sec.classList.add("visible");
+}
+});
+});
+</script>
+
+</body>
+</html>
